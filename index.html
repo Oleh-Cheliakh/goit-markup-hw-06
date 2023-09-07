@@ -78,6 +78,18 @@
 						>
 					</ul>
 				</address>
+				<button
+					class="mobile-menu-toggle js-open-menu"
+					type="button"
+					aria-expanded="false"
+					aria-controls="mobile-menu">
+					<svg
+						class="menu-toggle-icon"
+						width="32"
+						height="22">
+						<use href="./images/icons.svg#icon-hamburger-button"></use>
+					</svg>
+				</button>
 			</div>
 		</header>
 
@@ -179,6 +191,10 @@
 					<ul class="list">
 						<li class="list-item"
 							><img
+								srcset="
+									./images/desktop-application.jpg    1x,
+									./images/desktop-application@2x.jpg 2x
+								"
 								src="./images/desktop-application.jpg"
 								alt="Desktop application with dashboards"
 								width="360"
@@ -186,6 +202,10 @@
 						/></li>
 						<li class="list-item"
 							><img
+								srcset="
+									./images/mobile-application-layouts.jpg    1x,
+									./images/mobile-application-layouts@2x.jpg 2x
+								"
 								src="./images/mobile-application-layouts.jpg"
 								alt="Mobile chat application with four layouts"
 								width="360"
@@ -193,6 +213,10 @@
 						/></li>
 						<li class="list-item"
 							><img
+								srcset="
+									./images/mobile-application-testing.jpg    1x,
+									./images/mobile-application-testing@2x.jpg 2x
+								"
 								src="./images/mobile-application-testing.jpg"
 								alt="Application opened for testing on a smartphone"
 								width="360"
@@ -209,6 +233,10 @@
 					<ul class="list">
 						<li class="list-item">
 							<img
+								srcset="
+									./images/mark-guerrero.jpg    1x,
+									./images/mark-guerrero@2x.jpg 2x
+								"
 								src="./images/mark-guerrero.jpg"
 								alt="Mark Guerrero in blue shirt"
 								width="264"
@@ -270,6 +298,7 @@
 						</li>
 						<li class="list-item">
 							<img
+								srcset="./images/tom-ford.jpg 1x, ./images/tom-ford@2x.jpg 2x"
 								src="./images/tom-ford.jpg"
 								alt="Tom Ford in a blue shirt"
 								width="264"
@@ -331,6 +360,10 @@
 						</li>
 						<li class="list-item">
 							<img
+								srcset="
+									./images/camila-garcia.jpg    1x,
+									./images/camila-garcia@2x.jpg 2x
+								"
 								src="./images/camila-garcia.jpg"
 								alt="Camila Garcia in a rose sweater"
 								width="264"
@@ -392,6 +425,10 @@
 						</li>
 						<li class="list-item">
 							<img
+								srcset="
+									./images/daniel-wilson.jpg    1x,
+									./images/daniel-wilson@2x.jpg 2x
+								"
 								src="./images/daniel-wilson.jpg"
 								alt="Daniel Wilson in a grey t-shirt"
 								width="264"
@@ -613,7 +650,7 @@
 							class="form-input-label"
 							for="email">
 							<input
-								class="form-input"
+								class="form-input transition-smooth"
 								id="email"
 								type="email"
 								name="email"
@@ -635,6 +672,114 @@
 				</div>
 			</div>
 		</footer>
+
+		<!-- Mobile Menu -->
+		<div
+			role="menu"
+			class="mobile-menu js-menu-container transition-smooth">
+			<button
+				type="button"
+				class="button-menu-close js-close-menu">
+				<svg
+					width="8"
+					height="8">
+					<use href="./images/icons.svg#icon-close"></use>
+				</svg>
+			</button>
+			<nav class="mobile-menu-container">
+				<ul class="list">
+					<li class="list-item"
+						><a
+							class="link current-page"
+							href="./index.html"
+							>Studio</a
+						></li
+					>
+					<li class="list-item"
+						><a
+							class="link"
+							href="./portfolio.html"
+							>Portfolio</a
+						></li
+					>
+					<li class="list-item"
+						><a
+							class="link"
+							href=""
+							>Contacts</a
+						></li
+					>
+				</ul>
+			</nav>
+			<address class="mobile-contacts">
+				<ul class="list contacts-info">
+					<li
+						><a
+							class="link contact-item-primary"
+							href="tel:+110001111111"
+							>+11 (000) 111-11-11</a
+						></li
+					>
+					<li
+						><a
+							class="link contact-item-secondary"
+							href="mailto:info@devstudio.com"
+							>info@devstudio.com</a
+						></li
+					>
+				</ul>
+				<ul class="list mobile-menu-social-links">
+					<li class="list-item">
+						<a
+							class="list-item-link"
+							href="">
+							<svg
+								class="list-item-icon"
+								width="24"
+								height="24">
+								<use href="./images/icons.svg#icon-instagram"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="list-item">
+						<a
+							class="list-item-link"
+							href="">
+							<svg
+								class="list-item-icon"
+								width="24"
+								height="24">
+								<use href="./images/icons.svg#icon-twitter"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="list-item">
+						<a
+							class="list-item-link"
+							href="">
+							<svg
+								class="list-item-icon"
+								width="24"
+								height="24">
+								<use href="./images/icons.svg#icon-facebook"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="list-item">
+						<a
+							class="list-item-link"
+							href="">
+							<svg
+								class="list-item-icon"
+								width="24"
+								height="24">
+								<use href="./images/icons.svg#icon-linkedin"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</address>
+		</div>
 
 		<!-- Modal Window -->
 		<div
@@ -761,6 +906,8 @@
 				</form>
 			</div>
 		</div>
+
+		<script src="./js/mobile-menu.js"></script>
 		<script src="./js/modal.js"></script>
 	</body>
 </html>

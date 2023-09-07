@@ -78,6 +78,18 @@
 						>
 					</ul>
 				</address>
+				<button
+					class="mobile-menu-toggle js-open-menu"
+					type="button"
+					aria-expanded="false"
+					aria-controls="mobile-menu">
+					<svg
+						class="menu-toggle-icon"
+						width="32"
+						height="22">
+						<use href="./images/icons.svg#icon-hamburger-button"></use>
+					</svg>
+				</button>
 			</div>
 		</header>
 
@@ -130,6 +142,10 @@
 								href="">
 								<div class="list-item-image">
 									<img
+										srcset="
+											./images/banking-app.jpg    1x,
+											./images/banking-app@2x.jpg 2x
+										"
 										src="./images/banking-app.jpg"
 										alt="Banking application layout"
 										width="360"
@@ -152,6 +168,10 @@
 								href="">
 								<div class="list-item-image">
 									<img
+										srcset="
+											./images/cashless-payment-app.jpg    1x,
+											./images/cashless-payment-app@2x.jpg 2x
+										"
 										src="./images/cashless-payment-app.jpg"
 										alt="Smartphone with qr code scanner"
 										width="360"
@@ -174,6 +194,10 @@
 								href="">
 								<div class="list-item-image">
 									<img
+										srcset="
+											./images/meditation-app.jpg    1x,
+											./images/meditation-app@2x.jpg 2x
+										"
 										src="./images/meditation-app.jpg"
 										alt="Meditation application is opened on desktop and mobile"
 										width="360"
@@ -196,7 +220,11 @@
 								href="">
 								<div class="list-item-image">
 									<img
-										src="./images/taxi-secvice-app.jpg"
+										srcset="
+											./images/taxi-service-app.jpg    1x,
+											./images/taxi-service-app@2x.jpg 2x
+										"
+										src="./images/taxi-service-app.jpg"
 										alt="Smartphone with opened maps"
 										width="360"
 										height="300" />
@@ -218,7 +246,11 @@
 								href="">
 								<div class="list-item-image">
 									<img
-										src="./images/screen-illustrastions-design.jpg"
+										srcset="
+											./images/screen-illustrations-design.jpg    1x,
+											./images/screen-illustrations-design@2x.jpg 2x
+										"
+										src="./images/screen-illustrations-design.jpg"
 										alt="Five wallpapers in a fantasy style"
 										width="360"
 										height="300" />
@@ -240,7 +272,11 @@
 								href="">
 								<div class="list-item-image">
 									<img
-										src="./images/smiling-girl-with-smartphone.jpg"
+										srcset="
+											./images/smilling-girl-with-smartphone.jpg    1x,
+											./images/smilling-girl-with-smartphone@2x.jpg 2x
+										"
+										src="./images/smilling-girl-with-smartphone.jpg"
 										alt="Smiling girl is looking on a smartphone"
 										width="360"
 										height="300" />
@@ -262,6 +298,10 @@
 								href="">
 								<div class="list-item-image">
 									<img
+										srcset="
+											./images/stories-app.jpg    1x,
+											./images/stories-app@2x.jpg 2x
+										"
 										src="./images/stories-app.jpg"
 										alt="Five layouts of the news application"
 										width="360"
@@ -284,6 +324,10 @@
 								href="">
 								<div class="list-item-image">
 									<img
+										srcset="
+											./images/woman-with-groceries.jpg    1x,
+											./images/woman-with-groceries@2x.jpg 2x
+										"
 										src="./images/woman-with-groceries.jpg"
 										alt="Woman with a basket of groceries"
 										width="360"
@@ -306,6 +350,10 @@
 								href="">
 								<div class="list-item-image">
 									<img
+										srcset="
+											./images/coffee-with-milk.jpg    1x,
+											./images/coffee-with-milk@2x.jpg 2x
+										"
 										src="./images/coffee-with-milk.jpg"
 										alt="Woman is pouring milk in a coffee cup"
 										width="360"
@@ -425,5 +473,112 @@
 				</div>
 			</div>
 		</footer>
+
+		<div class="mobile-menu js-menu-container transition-smooth">
+			<button
+				type="button"
+				class="button-menu-close js-close-menu">
+				<svg
+					width="8"
+					height="8">
+					<use href="./images/icons.svg#icon-close"></use>
+				</svg>
+			</button>
+			<nav class="mobile-menu-container">
+				<ul class="list">
+					<li class="list-item"
+						><a
+							class="link current-page"
+							href="./index.html"
+							>Studio</a
+						></li
+					>
+					<li class="list-item"
+						><a
+							class="link"
+							href="./portfolio.html"
+							>Portfolio</a
+						></li
+					>
+					<li class="list-item"
+						><a
+							class="link"
+							href=""
+							>Contacts</a
+						></li
+					>
+				</ul>
+			</nav>
+			<address class="mobile-contacts">
+				<ul class="list contacts-info">
+					<li
+						><a
+							class="link contact-item-primary"
+							href="tel:+110001111111"
+							>+11 (000) 111-11-11</a
+						></li
+					>
+					<li
+						><a
+							class="link contact-item-secondary"
+							href="mailto:info@devstudio.com"
+							>info@devstudio.com</a
+						></li
+					>
+				</ul>
+				<ul class="list mobile-menu-social-links">
+					<li class="list-item">
+						<a
+							class="list-item-link"
+							href="">
+							<svg
+								class="list-item-icon"
+								width="24"
+								height="24">
+								<use href="./images/icons.svg#icon-instagram"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="list-item">
+						<a
+							class="list-item-link"
+							href="">
+							<svg
+								class="list-item-icon"
+								width="24"
+								height="24">
+								<use href="./images/icons.svg#icon-twitter"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="list-item">
+						<a
+							class="list-item-link"
+							href="">
+							<svg
+								class="list-item-icon"
+								width="24"
+								height="24">
+								<use href="./images/icons.svg#icon-facebook"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="list-item">
+						<a
+							class="list-item-link"
+							href="">
+							<svg
+								class="list-item-icon"
+								width="24"
+								height="24">
+								<use href="./images/icons.svg#icon-linkedin"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</address>
+		</div>
+
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>

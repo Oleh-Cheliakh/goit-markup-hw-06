@@ -475,7 +475,7 @@ img {
 	stroke: var(--navy-blue);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.header-container {
 		padding: 16px 24px;
 	}
@@ -486,13 +486,13 @@ img {
 	}
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 	.header-container .mobile-menu-toggle {
 		display: none;
 	}
 }
 
-@media (min-width: 769px) and (max-width: 1158px) {
+@media (min-width: 768px) and (max-width: 1157px) {
 	.contacts-container .list {
 		flex-direction: column;
 		gap: 12px;
@@ -520,10 +520,8 @@ img {
 .hero-section {
 	max-width: 1440px;
 	margin: 0 auto;
-	background-image: linear-gradient(
-			rgba(46, 47, 66, 0.7),
-			rgba(46, 47, 66, 0.7)
-		),
+	background-color: var(--grey);
+	background-image: linear-gradient(var(--grey), var(--grey)),
 		url(../images/people-hands-on-desk.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -552,13 +550,10 @@ img {
 	align-self: center;
 }
 
-@media (min-resolution: 192dpi) or (min-device-pixel-ratio: 2) {
+@media (min-resolution: 192dpi) or (-webkit-min-device-pixel-ratio: 2) {
 	.hero-section {
-		background-image: linear-gradient(
-				rgba(46, 47, 66, 0.7),
-				rgba(46, 47, 66, 0.7)
-			),
-			url(../images/people-hands-on-desk-@2x.jpg);
+		background-image: linear-gradient(var(--grey), var(--grey)),
+			url(../images/people-hands-on-desk@2x.jpg);
 	}
 }
 
@@ -601,13 +596,13 @@ img {
 	margin-bottom: 8px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.features-container .list-item-title {
 		text-align: center;
 	}
 }
 
-@media (max-width: 1158px) {
+@media (max-width: 1157px) {
 	.features-container .list-item-title {
 		font-size: 36px;
 		font-weight: 700;
@@ -816,6 +811,12 @@ img {
 	margin-bottom: 72px;
 }
 
+@media (max-width: 1157px) {
+	.customers-container {
+		max-width: 584px;
+	}
+}
+
 @media (min-width: 768px) {
 	.customers-section .list {
 		column-gap: 24px;
@@ -950,7 +951,13 @@ img {
 	margin-left: 16px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1157px) {
+	.footer-container {
+		max-width: 584px;
+	}
+}
+
+@media (max-width: 767px) {
 	.footer-container {
 		align-items: center;
 		gap: 72px;
@@ -982,9 +989,8 @@ img {
 	}
 }
 
-@media (min-width: 768px) and (max-width: 1158px) {
+@media (min-width: 768px) and (max-width: 1157px) {
 	.footer-container {
-		padding-left: 108px;
 		column-gap: 24px;
 		row-gap: 72px;
 	}

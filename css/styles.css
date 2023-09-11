@@ -522,7 +522,7 @@ img {
 	margin: 0 auto;
 	background-color: var(--grey);
 	background-image: linear-gradient(var(--grey), var(--grey)),
-		url(../images/people-hands-on-desk.jpg);
+		url(../images/people-hands-on-desk-mobile.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -550,14 +550,26 @@ img {
 	align-self: center;
 }
 
-@media (min-resolution: 192dpi) or (-webkit-min-device-pixel-ratio: 2) {
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
 	.hero-section {
 		background-image: linear-gradient(var(--grey), var(--grey)),
-			url(../images/people-hands-on-desk@2x.jpg);
+			url(../images/people-hands-on-desk-mobile@2x.jpg);
+	}
+}
+
+@media (max-width: 767px) and (min-resolution: 192dpi) {
+	.hero-section {
+		background-image: linear-gradient(var(--grey), var(--grey)),
+			url(../images/people-hands-on-desk-mobile@2x.jpg);
 	}
 }
 
 @media (min-width: 768px) {
+	.hero-section {
+		background-image: linear-gradient(var(--grey), var(--grey)),
+			url(../images/people-hands-on-desk-tablet.jpg);
+	}
+
 	.hero-section .page-title {
 		max-width: 496px;
 		font-size: 56px;
@@ -566,13 +578,43 @@ img {
 	}
 }
 
+@media (min-width: 768px) and (max-width: 1157px) and (-webkit-min-device-pixel-ratio: 2) {
+	.hero-section {
+		background-image: linear-gradient(var(--grey), var(--grey)),
+			url(../images/people-hands-on-desk-tablet@2x.jpg);
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1157px) and (min-resolution: 192dpi) {
+	.hero-section {
+		background-image: linear-gradient(var(--grey), var(--grey)),
+			url(../images/people-hands-on-desk-tablet@2x.jpg);
+	}
+}
+
 @media (min-width: 1158px) {
 	.hero-section {
+		background-image: linear-gradient(var(--grey), var(--grey)),
+			url(../images/people-hands-on-desk-desktop.jpg);
 		padding: 188px 0;
 	}
 
 	.hero-section .page-title {
 		margin-bottom: 48px;
+	}
+}
+
+@media (min-width: 1158px) and (-webkit-min-device-pixel-ratio: 2) {
+	.hero-section {
+		background-image: linear-gradient(var(--grey), var(--grey)),
+			url(../images/people-hands-on-desk-desktop@2x.jpg);
+	}
+}
+
+@media (min-width: 1158px) and (min-resolution: 192dpi) {
+	.hero-section {
+		background-image: linear-gradient(var(--grey), var(--grey)),
+			url(../images/people-hands-on-desk-desktop@2x.jpg);
 	}
 }
 
